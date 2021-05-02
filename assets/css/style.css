@@ -78,7 +78,7 @@ main {
     margin-right: auto;
 }
 
-.about-me {
+.pages {
     margin: 25px 0;
     padding: 10px 0;
     display: flex;
@@ -88,7 +88,7 @@ main {
     justify-content: space-between;
 }
 
-.about-me h2 {
+.pages h2 {
     flex: 0 0 15%;
     text-align: right;
     padding-right: 20px;
@@ -103,15 +103,48 @@ main {
     
 }
 
-.about-me div {
+.pages div {
     flex: 0 0 80%;
     font-size: 1.1vw;
     
 }
 
-.about-me p {
+.pages p {
     margin-bottom: 20px;
 }
+
+.flex-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-tile {
+    border: 5px solid #0808e771;
+    max-height: 150px;
+    max-width: 150px;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 25px 0;
+    margin: 3%;
+    transition: ease-in-out .5s;  
+}
+
+.flex-boxes:first-child {
+    min-height: 400px;
+    flex-basis: 100%;
+}
+
+.flex-tile div {
+    padding: 8px 10px
+}
+
+.flex-tile h3 {
+    font-size: 2em;
+}
+
+
+    
 
 
 
