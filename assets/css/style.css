@@ -3,20 +3,35 @@
 }
 
 body {
-    margin: 0;
     padding: 0;
     background-color: rgba(252, 134, 0, 0.479);
     line-height: 1.5;
     font-family: cursive;
 }
-
 h1,
-h2 {
+h2,
+h5 {
     margin: 0;
 }
 
-p {
+
+
+.pages h2 {
+    flex: 0 0 20%;
+    padding-right: 15px;
+    border-right: 6px solid #fd9827;
+    line-height: 1.1;
+    font-size: 4vw;
+    color: #39393bc0;
+    text-align: right;
+}
+
+.pages p {
     margin: 0;
+    margin-bottom: 20px;
+    color: rgb(13, 10, 177);
+    font-weight: 700;
+    margin-left: 1vw;
 }
 
 header {
@@ -69,7 +84,7 @@ nav a:hover {
     background-image: url("https://www.transparenttextures.com/patterns/subtle-zebra-3d.png");
     min-height: 25vh;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     margin: 0 0 1%;
     padding: 2% 7%;
 }
@@ -87,18 +102,10 @@ nav a:hover {
     margin-left: auto;
     margin-right: 10px;
     width: 300px;
-    
-    
-
-}
-
-main {
-    margin-top: 20px;
-    margin-bottom: 45px;
 }
 
 .content {
-    max-width: 86%;
+    max-width: 85%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -109,37 +116,63 @@ main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: stretch;
     justify-content: space-between;
+
 }
 
-.pages h2 {
-    flex: 0 0 20%;
-    text-align: left;
-    padding-right: 15px;
-    border-right: 6px solid #fd9827;
-    line-height: 1.1;
-    font-size: 3.5vw;
-    line-height: 1.1;
-    background-color: #0e0ef3b7;
+
+.image-row {
+    flex-direction: column;
+    position: relative;
+}
+
+.image.row div {
+    position: absolute;
+    margin: auto;
+    block-size: auto;
+    padding: 8px 10px;
     color: #fd9827;
 }
 
-.pages div {
+#about {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+
+}
+
+#about div {
     flex: 0 0 80%;
     font-size: 1vw;
     padding: 50px;
- 
 }
 
-.pages p {
-    margin-bottom: 20px;
-    color: rgb(13, 10, 177);
-    font-weight: 700;
-    margin-left: 1vw;
+#contact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
 }
 
-.pages h3 {
+#contact div {
+    flex: 0 0 80%;
+    font-size: 1vw;
+    padding: 50px;
+}
+
+#work  {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#work a {
+    text-decoration: none;
+}
+
+
+
+.pages h5 {
     background-color: #7c7cf8ec;
     width: 300px;
     height: 150px;
@@ -148,52 +181,60 @@ main {
     margin: 20px;
     font-size: 2em;
     text-align: center;
-    border-radius: 500px;
-    
+    color: #fd9827;
+   
 }
 
 .flex-boxes {
     display: flex;
     flex-wrap: wrap;
+    flex-basis: inherit;
     justify-content: center;
 }
 
-.flex-tile:hover {
-    border: 35px solid rgb(6, 245, 46);
-}
-
-.flex-tile {
-    border: 5px solid #0808e771;
-    width: 50%;
-    min-height: 150px;
-    max-height: 250px;
-    flex-basis: calc(50% - 1em);
+.link {
     display: flex;
     align-items: flex-end;
-    padding: 0 0 25px 0;
-    margin: .5em;
+    margin: .75em;
     text-decoration: none;
-    transition: all .5s;
-    background-size: 100%;
-    border-radius: 500px;     
+    background-size: 85%;
+    transition: all 0.5s;
+    font-size: .75vw;
+    
 }
 
-.flex-tile div {
-    margin: auto;
-    block-size: auto;
-    padding: 8px 10px;
-    color: #fd9827;
+.link:hover {
+    border: 5px solid rgb(0, 238, 255);
+    background-color: rgba(0, 238, 255, 0.582);
 }
 
-.flex-tile span {
-    font-size: 1vw;
+
+.image-row {
+    width: 50%;
+    display: flex;
 }
 
 .box-one {
+    background-image: url("../images/coding-1.jpg");
     flex: 100%;
-    min-height: 400px;
-    
+    min-height: 300px
 }
+
+.box-two {
+    background-image: url("../images/coding-2.jpg");
+} 
+
+.box-three {
+    background-image: url("../images/coding-3.jpg");
+}
+
+.box-four {
+    background-image: url("../images/coding-4.jpg");
+}
+
+.box-five {
+    background-image: url("../images/coding-5.jpg");
+} 
 
 address {
     display: flex;
@@ -221,28 +262,7 @@ address a:hover {
     color: #fd9827;
     background-size: 100% 100%;
     font-weight: bold;
-}    
-
-.box-one {
-    background-image: url("../images/coding-1.jpg");
-}
-
-.box-two {
-    background-image: url("../images/coding-2.jpg");
-}
-
-.box-three {
-    background-image: url("../images/coding-3.jpg");
-}
-
-.box-four {
-    background-image: url("../images/coding-4.jpg");
-}
-
-.box-five {
-    background-image: url("../images/coding-5.jpg");
-}
-
+}  
 
 @media screen and (max-width: 980px) {
     header {
@@ -264,22 +284,20 @@ address a:hover {
         text-align: center;
         font-size: 3vw;
     }    
-    .pages {
-        flex: 0 0 100%;
-    }
-    
-    .pages h2, div {
-        flex: 0 0 100%;
-    }   
-
     .pages h2 {
+        border-right: none;
+        border-bottom: 4px solid #fd9827;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
         text-align: left;
-        font-size: 9vw;
+        font-size: 7vw;
+        flex: 0 0 100%;
     }
-    
 
-    
-
+    .flex-boxes {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
     }
 
