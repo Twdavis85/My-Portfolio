@@ -3,6 +3,7 @@
 }
 
 body {
+    margin: 0;
     padding: 0;
     background-color: rgba(252, 134, 0, 0.479);
     line-height: 1.5;
@@ -14,24 +15,18 @@ h5 {
     margin: 0;
 }
 
+main {
+    margin-top: 20px;
+    margin-bottom: 45px;
+  }
 
-
-.pages h2 {
-    flex: 0 0 20%;
-    padding-right: 15px;
-    border-right: 6px solid #fd9827;
-    line-height: 1.1;
-    font-size: 4vw;
-    color: #39393bc0;
-    text-align: right;
+p {
+    margin: 0;
 }
 
 .pages p {
-    margin: 0;
     margin-bottom: 20px;
     color: rgb(13, 10, 177);
-    font-weight: 700;
-    margin-left: 1vw;
 }
 
 header {
@@ -116,113 +111,74 @@ nav a:hover {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: stretch;
     justify-content: space-between;
 
 }
 
-
-.image-row {
-    flex-direction: column;
-    position: relative;
+.pages h2 {
+    flex: 0 0 20%;
+    text-align: right;
+    padding-right: 15px;
+    border-right: 6px solid #fd9827;
+    line-height: 1.1;
+    font-size: 4vw;
+    color: #39393bc0;
 }
 
-.image.row div {
-    position: absolute;
-    margin: auto;
-    block-size: auto;
-    padding: 8px 10px;
-    color: #fd9827;
-}
-
-#about {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    
-
-}
-
-#about div {
-    flex: 0 0 80%;
-    font-size: 1vw;
-    padding: 50px;
-}
-
-#contact {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    
-}
-
-#contact div {
-    flex: 0 0 80%;
-    font-size: 1vw;
-    padding: 50px;
-}
-
-#work  {
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-#work a {
-    text-decoration: none;
-}
-
-
-
-.pages h5 {
-    background-color: #7c7cf8ec;
-    width: 300px;
-    height: 150px;
-    border: 5px solid #0e0ef3b7;
-    padding: 10px;
-    margin: 20px;
-    font-size: 2em;
-    text-align: center;
-    color: #fd9827;
-   
+.pages > div {
+    flex: 0 0 77%;
 }
 
 .flex-boxes {
     display: flex;
     flex-wrap: wrap;
-    flex-basis: inherit;
     justify-content: center;
 }
 
 .link {
+    min-height: 150px;
+    max-height: 150px;
+    flex-basis: calc(50% - 1em);
     display: flex;
     align-items: flex-end;
-    margin: .75em;
+    padding: 0 0 20px 0;
+    margin: 0.5em;
     text-decoration: none;
-    background-size: 85%;
+    background-size: 150%;
     transition: all 0.5s;
-    font-size: .75vw;
-    
+    font-size: 0.9rem;
 }
 
+.large-image {
+    min-height: 400px;
+    flex-basis: 100%;
+}
+ .link div {
+     background-color: #7c7cf8ec;
+     padding: 8px 10px;
+
+ }
+.link h5 {
+    margin: 20px;
+    font-size: 1.5em;
+    text-align: center;
+    color: #fd9827; 
+   
+}
 .link:hover {
     border: 5px solid rgb(0, 238, 255);
     background-color: rgba(0, 238, 255, 0.582);
 }
-
-
-.image-row {
-    width: 50%;
-    display: flex;
-}
-
 .box-one {
     background-image: url("../images/coding-1.jpg");
-    flex: 100%;
-    min-height: 300px
+    
+    
 }
 
 .box-two {
     background-image: url("../images/coding-2.jpg");
-} 
+}   
 
 .box-three {
     background-image: url("../images/coding-3.jpg");
@@ -274,11 +230,15 @@ address a:hover {
         width: 100%;
         padding: 10px;
         font-size: 4.5vw;
-        line-height: 1;
+        margin-bottom: 10px;
     } 
     header nav {
         justify-content: center;
     } 
+    .pages h2,
+    .pages div {
+        flex: 0 0 100%;
+    }
     .subtitle {
         justify-content: center;
         text-align: center;
@@ -291,23 +251,28 @@ address a:hover {
         padding-bottom: 10px;
         text-align: left;
         font-size: 7vw;
-        flex: 0 0 100%;
     }
 
-    .flex-boxes {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    }
+}
 
 
 @media screen and (max-width: 768px) {
-    header h1 {
-        font-size: 5vw;
-        line-height: 1;
-
+    .link,
+    .large-image {
+        flex-basis: 100%;
     }
+    .large-image {
+        min-height: 150px;
+    }
+    .subtitle {
+        justify-content: center;
+        text-align: center;
+    }
+    .contact address {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     
 }
 
