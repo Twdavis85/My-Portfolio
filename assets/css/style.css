@@ -129,7 +129,7 @@ main {
   align-items: flex-end;
   margin: 0.5em;
   text-decoration: none;
-  background-size: 85%;
+  background-size: cover;
   transition: all 0.75s;
   border: 15px solid #1d13dfd5;
   background-color: rgba(217, 220, 224, 0.568);
@@ -154,25 +154,30 @@ main {
 }
 
 .box-one {
-  background-image: url("../images/coding-1.jpg");
+  background-image: url("../images/screenshot.png");
+  background-color: unset;
   min-height: 400px;
   flex-basis: 100%;
 }
 
 .box-two {
-  background-image: url("../images/coding-2.jpg");
+  background-image: url("../images/quiz-screenshot.png");
+  background-color: unset;
 }
 
 .box-three {
-  background-image: url("../images/coding-3.jpg");
+  background-image: url("../images/Planner-ss.png");
+  background-color: unset;
 }
 
 .box-four {
-  background-image: url("../images/coding-4.jpg");
+  background-image: url("../images/screenshot-pw.png");
+  background-color: unset;
 }
 
 .box-five {
-  background-image: url("../images/coding-5.jpg");
+  background-image: url("../images/coding-4.jpg");
+  background-color: unset;
 }
 
 address {
