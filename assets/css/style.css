@@ -12,7 +12,8 @@ body {
 
 h1,
 h2,
-h5 {
+h4,
+h6 {
   margin: 0;
 }
 
@@ -137,7 +138,7 @@ main {
 }
 
 .link div {
-  background-color: #1d13dfd5;
+  background-color: #1d13df;
   padding: 0.8% 1%;
   margin: 10px;
   font-size: 1.5em;
@@ -148,9 +149,22 @@ main {
   font-size: 0.75em;
 }
 
-.link:hover {
-  border: 15px solid rgb(9, 255, 0);
-  background-color: rgba(40, 20, 223, 0.938);
+.link a {
+  cursor: pointer;
+  text-decoration: none;
+  color: lightgray;
+  background-image: linear-gradient(270deg, #fd9827 0%, #fd9827 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: bottom;
+  transition: all 0.3s ease-in;
+
+}
+
+.link a:hover {
+  color: #1d13dfd5;
+  background-size: 100% 100%;
+
 }
 
 .box-one {
@@ -176,7 +190,7 @@ main {
 }
 
 .box-five {
-  background-image: url("../images/coding-4.jpg");
+  background-image: url("../images/Horiseon.png");
   background-color: unset;
 }
 
