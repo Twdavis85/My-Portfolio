@@ -24,14 +24,15 @@ This week for homework we were asked to create a portfolio website.  This websit
 * GitHub
 
 ## Author
-  Tyler Davis &nbsp; | &nbsp; [GitHub](https://github.com/Twdavis85)
+  Tyler Davis &nbsp; | &nbsp; [GitHub](https://github.com/Twdavis85) &nbsp; | &nbsp; [Email](tdnc85@yahoo.com)
 
 ## Review URL
 [GitHub](https://github.com/Twdavis85/My-Portfolio) &nbsp; | &nbsp; 
 [Live](https://twdavis85.github.io/My-Portfolio/)
 
 #
-![portfolio demo](assets/images/portfolio.png)
+![portfolio screenshot](assets/images/portfolio.png)
+![portfolio media screenshot](assets/images/portfolio980.png)
 
 ## License
 Copyright 2021 &ensp; Tyler Davis
