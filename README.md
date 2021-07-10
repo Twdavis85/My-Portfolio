@@ -31,8 +31,7 @@ This week for homework we were asked to create a portfolio website.  This websit
 [Live](https://twdavis85.github.io/My-Portfolio/)
 
 #
-![portfolio screenshot](assets/images/portfolio.png)
-![portfolio media screenshot](assets/images/portfolio980.png)
+![portfolio screenshot](assets/images/portfolioss.png)
 
 ## License
 Copyright 2021 &ensp; Tyler Davis

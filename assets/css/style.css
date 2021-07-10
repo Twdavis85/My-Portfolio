@@ -54,21 +54,19 @@ nav a:hover {
 }
 
 .subtitle {
-  background-color: transparent;
   min-height: 25vh;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   margin: 0 0 1%;
-  padding: 2% 7%;
+  padding: 5% 10%;
   flex-wrap: wrap;
-  background-image: url(../images/charlotteskyline.jpg) ;
-
+  background-image: url(../images/charlotte2.jpg);
+  background-size: auto;
 }
 
-
 .subtitle h1 {
-  color: #fd9827;
-  font-size: 5vw;
+  color: #1b0bfa;
+  font-size: 7vw;
   line-height: 2;
   display: inline;
 }
@@ -84,6 +82,10 @@ main {
   max-width: 90%;
   margin-left: 5%;
   margin-right: 5%;
+}
+
+#skills img {
+  padding-right: 2%;
 }
 
 .pages {
@@ -186,7 +188,7 @@ main {
 }
 
 .box-four {
-  background-image: url("../images/screenshot-pw.png");
+  background-image: url("../images/teamscreenshot.png");
   background-color: unset;
 }
 
@@ -195,7 +197,7 @@ main {
   background-color: unset;
 }
 
-address {
+.address {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -203,19 +205,20 @@ address {
   height: 100%;
 }
 
-address a {
+.address a {
   text-decoration: none;
   padding: 7px;
   color: rgb(13, 10, 177);
-  font-size: 1.25em;
+  font-size: 1.5em;
   background-image: linear-gradient(270deg, #0e0ef3b7 0%, #0e0ef3b7 100%);
   background-repeat: no-repeat;
   background-size: 100% 0.2em;
   background-position: bottom;
   transition: all 0.3s ease-in;
+  font-weight: bold;
 }
 
-address a:hover {
+.address a:hover {
   color: #fd9827;
   background-size: 100% 100%;
   font-weight: bold;
