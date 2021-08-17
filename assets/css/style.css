@@ -167,7 +167,7 @@ main {
 }
 
 .box-one {
-  background-image: url("../images/screenshot.png");
+  background-image: url("../images/nine.png");
   background-color: unset;
   min-height: 400px;
   flex-basis: 100%;
@@ -178,22 +178,22 @@ main {
 }
 
 .box-two {
-  background-image: url("../images/quiz-screenshot.png");
+  background-image: url("../images/screenshot.png");
   background-color: unset;
 }
 
 .box-three {
-  background-image: url("../images/Planner-ss.png");
+  background-image: url("../images/quiz-screenshot.png");
   background-color: unset;
 }
 
 .box-four {
-  background-image: url("../images/teamscreenshot.png");
+  background-image: url("../images/Planner-ss.png");
   background-color: unset;
 }
 
 .box-five {
-  background-image: url("../images/readme.PNG");
+  background-image: url("../images/teamscreenshot.png");
   background-color: unset;
 }
 
